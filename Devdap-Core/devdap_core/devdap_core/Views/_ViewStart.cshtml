@@ -1,0 +1,13 @@
+﻿@{
+    var controller = ViewContext.RouteData.Values["Controller"].ToString();
+    string cLayout = "";
+    if (controller == "Empty")
+    {
+        cLayout = "~/Views/Shared/_Empty_Layout.cshtml";
+    }
+    else
+    {
+        cLayout = "~/Views/Shared/_Layout.cshtml";
+    }
+    Layout = cLayout;
+}

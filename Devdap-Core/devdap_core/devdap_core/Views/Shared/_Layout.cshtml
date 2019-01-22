@@ -1,0 +1,237 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - devdap</title>
+    <link rel="icon" href="~/img/favicon/favicon.ico">
+    <environment include="Development">
+        <link rel="stylesheet" href="~/css/bundle.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+    </environment>
+    <environment exclude="Development">
+
+        <link rel="stylesheet" href="~/css/bundle.css" />
+        <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+
+    </environment>
+</head>
+<body id="top">
+    <header class="header header-shrink header-inverse fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg px-md-0">
+                <a class="navbar-brand" href="@Url.Action("index", "Home")">
+                    <span class="logo-default">
+                        <h2 class="text-white">Devdap</h2>
+                    </span>
+                    <span class="logo-inverse">
+                        <h2 class="text-white">Devdap</h2>
+                    </span>
+                </a>
+                <button class="navbar-toggler p-0" data-toggle="collapse" data-target="#navbarNav">
+                    <div class="hamburger hamburger--spin js-hamburger">
+                        <div class="hamburger-box">
+                            <div class="hamburger-inner"></div>
+                        </div>
+                    </div>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+
+                            <a class="nav-link" href="@Url.Action("index", "Home")">HOME</a>
+
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Demos
+                                <i class="lnr lnr-chevron-down u-fs-12 ml-1"></i>
+                            </a>
+                            <div class="dropdown-menu box-shadow-v2" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="https://devdap.com/themes-preview/live/devdap/LandingPages/app/index.html">App</a>
+                                <a class="dropdown-item" href="https://devdap.com/themes-preview/live/devdap/LandingPages/software/index.html">Software</a>
+                                <a class="dropdown-item" href="https://devdap.com/themes-preview/live/devdap/LandingPages/seo/index.html">SEO</a>
+                                <a class="dropdown-item" href="https://devdap.com/themes-preview/live/devdap/LandingPages/admin/index.html">Exclusive Admin</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                headers
+                                <i class="lnr lnr-chevron-down u-fs-12 ml-1"></i>
+                            </a>
+                            <div class="dropdown-menu box-shadow-v2" aria-labelledby="navbarDropdown">
+
+                                <a class="dropdown-item" href="@Url.Action("gradients", "Headers")">Gradients</a>
+                                <a class="dropdown-item" href="@Url.Action("solid", "Headers")">Solid Color</a>
+                                <a class="dropdown-item" href="@Url.Action("parallax", "Headers")">parallax</a>
+                                <a class="dropdown-item" href="@Url.Action("typing", "Headers")">typing</a>
+                                <a class="dropdown-item" href="@Url.Action("background", "Headers")">background image</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                pages
+                                <i class="lnr lnr-chevron-down u-fs-12 ml-1"></i>
+                            </a>
+                            <div class="dropdown-menu box-shadow-v2 dropdown__col-2" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="@Url.Action("about", "Pages")">About</a>
+                                <a class="dropdown-item" href="@Url.Action("portfolio", "Pages")">Portfolio</a>
+                                <a class="dropdown-item" href="@Url.Action("portfolio_details", "Pages")">Portfolio Details</a>
+                                <a class="dropdown-item" href="@Url.Action("blog", "Pages")">Blog</a>
+                                <a class="dropdown-item" href="@Url.Action("blog_details", "Pages")">Blog Details</a>
+                                <a class="dropdown-item" href="@Url.Action("login", "Empty")">Login</a>
+                                <a class="dropdown-item" href="@Url.Action("error", "Empty")">Register</a>
+                                <a class="dropdown-item" href="@Url.Action("comming_soon", "Empty")">Coming soon</a>
+                                <a class="dropdown-item" href="@Url.Action("contact", "Pages")">Contact</a>
+                                <a class="dropdown-item" href="@Url.Action("register", "Empty")">404</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                elements
+                                <i class="lnr lnr-chevron-down u-fs-12 ml-1"></i>
+                            </a>
+                            <div class="dropdown-menu box-shadow-v2 dropdown__col-2" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="@Url.Action("testmonial", "Elements")">testimonial</a>
+                                <a class="dropdown-item" href="@Url.Action("gallery", "Elements")">gallery</a>
+                                <a class="dropdown-item" href="@Url.Action("team", "Elements")">team</a>
+                                <a class="dropdown-item" href="@Url.Action("client", "Elements")">client</a>
+                                <a class="dropdown-item" href="@Url.Action("error", "Empty")">signup</a>
+                                <a class="dropdown-item" href="@Url.Action("form", "Elements")">Form</a>
+                                <a class="dropdown-item" href="@Url.Action("footer", "Elements")">footer</a>
+                                <a class="dropdown-item" href="@Url.Action("tabs", "Elements")">Tab</a>
+                                <a class="dropdown-item" href="@Url.Action("accordion", "Elements")">Accordion</a>
+                                <a class="dropdown-item" href="@Url.Action("progressbar", "Elements")">Progressbar</a>
+                                <a class="dropdown-item" href="@Url.Action("count_down", "Elements")">Countdown</a>
+                                <a class="dropdown-item" href="@Url.Action("button", "Elements")">Button</a>
+                                <a class="dropdown-item" href="@Url.Action("list_style", "Elements")">List Style</a>
+                                <a class="dropdown-item" href="@Url.Action("features", "Elements")">feature</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Blog
+                                <i class="lnr lnr-chevron-down u-fs-12 ml-1"></i>
+                            </a>
+                            <div class="dropdown-menu box-shadow-v2" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="@Url.Action("blog", "Pages")">blog single</a>
+                                <a class="dropdown-item" href="@Url.Action("blog_grid", "Pages")">blog grid</a>
+                                <a class="dropdown-item" href="@Url.Action("blog_details", "Pages")">blog details</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="@Url.Action("contact", "Pages")">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    @RenderBody()
+    <footer>
+        <section class="bg-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h2>Devdap</h2>
+                        <p class="u-my-40">
+                            Nam liber tempor cum soluta nobis eleifend they option congue is nihil imper per tem por legere is me velit doming vulputate.
+                        </p>
+                        <form class="form-inline">
+                            <div class="input-group box-shadow-v1 u-rounded-50 bg-white u-of-hidden">
+                                <div class="input-group-addon bg-white border-0 pl-4 pr-0">
+                                    <span class="icon icon-Mail text-primary"></span>
+                                </div>
+                                <input type="text" class="form-control border-0 p-3" placeholder="Enter your email">
+                                <button type="submit" class="input-group-btn btn bg-white">
+                                    <span class="icon icon-Arrow text-primary"></span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-2 ml-auto">
+                        <h4>Useful Links</h4>
+                        <div class="u-h-4 u-w-50 bg-purple rounded mt-3 u-mb-40"></div>
+                        <ul class="list-unstyled u-lh-2">
+                            <li>
+                                <a href="#">About Us </a>
+                            </li>
+                            <li>
+                                <a href="#">Testimonials </a>
+                            </li>
+                            <li>
+                                <a href="#">Pricing </a>
+                            </li>
+                            <li>
+                                <a href="#">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="#">News </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 ml-auto">
+                        <h4>Contact Info</h4>
+                        <div class="u-h-4 u-w-50 bg-purple rounded mt-3 u-mb-40"></div>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <span class="icon icon-Phone2 text-primary mr-2"></span> 123. 456. 789
+                            </li>
+                            <li class="mb-2">
+                                <span class="icon icon-Mail text-primary mr-2"></span>
+                                <a href="blog.devdap@gmail.com">blog.devdap@gmail.com</a>
+                            </li>
+                            <li class="mb-2">
+                                <span class="icon icon-Pointer text-primary mr-2"></span> Punjab, Pakistan
+                            </li>
+                        </ul>
+                        <ul class="list-inline social social-rounded social-white mt-4">
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <i class="fa fa-google-plus"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container text-center p-4">
+            <p class="mb-0">
+                Build with
+                <span class="icon icon-Heart text-primary mx-2"></span> love for you.
+            </p>
+        </div>
+    </footer>
+    <div class="scroll-top bg-white box-shadow-v1">
+        <i class="fa fa-angle-up" aria-hidden="true"></i>
+    </div>
+    <environment include="Development">
+        <script src="~/js/bundle.js"></script>
+        <script src="~/js/devdap.js" asp-append-version="true"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="~/js/bundle.js"></script>
+        <script src="~/js/devdap.js" asp-append-version="true"></script>
+    </environment>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,11 @@
+D:\Final Themes\NET Core\devdap_core\devdap_core\bin\Debug\netcoreapp2.0\devdap_core.deps.json
+D:\Final Themes\NET Core\devdap_core\devdap_core\bin\Debug\netcoreapp2.0\devdap_core.runtimeconfig.json
+D:\Final Themes\NET Core\devdap_core\devdap_core\bin\Debug\netcoreapp2.0\devdap_core.runtimeconfig.dev.json
+D:\Final Themes\NET Core\devdap_core\devdap_core\bin\Debug\netcoreapp2.0\devdap_core.dll
+D:\Final Themes\NET Core\devdap_core\devdap_core\bin\Debug\netcoreapp2.0\devdap_core.pdb
+D:\Final Themes\NET Core\devdap_core\devdap_core\obj\Debug\netcoreapp2.0\devdap_core.csprojResolveAssemblyReference.cache
+D:\Final Themes\NET Core\devdap_core\devdap_core\obj\Debug\netcoreapp2.0\devdap_core.csproj.CoreCompileInputs.cache
+D:\Final Themes\NET Core\devdap_core\devdap_core\obj\Debug\netcoreapp2.0\devdap_core.AssemblyInfoInputs.cache
+D:\Final Themes\NET Core\devdap_core\devdap_core\obj\Debug\netcoreapp2.0\devdap_core.AssemblyInfo.cs
+D:\Final Themes\NET Core\devdap_core\devdap_core\obj\Debug\netcoreapp2.0\devdap_core.dll
+D:\Final Themes\NET Core\devdap_core\devdap_core\obj\Debug\netcoreapp2.0\devdap_core.pdb

@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="A complete landing page solution for any business">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="~/img/favicon/favicon.ico">
+    <title>@ViewBag.Title | devdap - Beautiful landing Page solution for your business</title>
+
+    <link rel="stylesheet" href="~/Content/bundle.css">
+    <link rel="stylesheet" href="~/Content/Site.css">
+
+
+</head>
+<body id="top">
+   
+    @RenderBody()
+    
+    <div class="scroll-top bg-white box-shadow-v1">
+        <i class="fa fa-angle-up" aria-hidden="true"></i>
+    </div>
+    <script src="~/Scripts/bundle.js"></script>
+    <script src="~/Scripts/devdap.js"></script>
+
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>
